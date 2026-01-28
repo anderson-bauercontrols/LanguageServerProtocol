@@ -1,4 +1,6 @@
-﻿namespace LanguageServer.Parameters.TextDocument
+﻿using Microsoft.VisualStudio.LanguageServer.Protocol;
+
+namespace LanguageServer.Parameters.TextDocument
 {
    /// <summary>
    /// For <c>textDocument/codeAction</c>
