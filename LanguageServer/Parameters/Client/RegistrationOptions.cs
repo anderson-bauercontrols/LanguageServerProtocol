@@ -1,6 +1,6 @@
 ﻿namespace LanguageServer.Parameters.Client
 {
-    public abstract class RegistrationOptions
-    {
-    }
+   public abstract class RegistrationOptions
+   {
+   }
 }

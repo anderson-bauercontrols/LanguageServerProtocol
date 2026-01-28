@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Description>A library to handle Language Server Protocol (https://github.com/Microsoft/language-server-protocol).</Description>
     <Company />
     <Copyright>Copyright © 2018 Kentaro Inomata</Copyright>
@@ -35,7 +35,18 @@ v1.0.0: initial release.</PackageReleaseNotes>
     <DocumentationFile>bin\Release\netstandard1.3\LanguageServer.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+    <Folder Include="Parameters\Window\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Matarillo.IO" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.LanguageServer.Protocol">
+      <Version>17.2.8</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.LanguageServer.Protocol.Extensions">
+      <Version>17.2.8</Version>
+    </PackageReference>
   </ItemGroup>
 </Project>

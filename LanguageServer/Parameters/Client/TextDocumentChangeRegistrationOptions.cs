@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using LanguageServer.Parameters.General;
+﻿using Microsoft.VisualStudio.LanguageServer.Protocol;
 
 namespace LanguageServer.Parameters.Client
 {
-    /// <summary>
-    /// For <c>client/registerCapability</c>
-    /// </summary>
-    public class TextDocumentChangeRegistrationOptions : TextDocumentRegistrationOptions
-    {
-        public TextDocumentSyncKind syncKind { get; set; }
-    }
+   /// <summary>
+   /// For <c>client/registerCapability</c>
+   /// </summary>
+   public class TextDocumentChangeRegistrationOptions : TextDocumentRegistrationOptions
+   {
+      public TextDocumentSyncKind syncKind { get; set; }
+   }
 }
